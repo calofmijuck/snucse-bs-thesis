@@ -1,0 +1,50 @@
+\usepackage{kotex}
+\usepackage{titlesec}
+\usepackage{bookmark}
+\usepackage{import}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{
+    top = 30mm,
+    bottom = 25mm,
+    left = 25mm,
+    right = 25mm
+}
+\usepackage{caption}
+\usepackage{palatino}
+
+\setcounter{tocdepth}{2}
+
+% Line spacing
+\usepackage[nodisplayskipstretch]{setspace}
+\linespread{1.5}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{10pt}
+
+\usepackage{graphicx}
+\graphicspath{{./images}}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    unicode=true,
+    urlcolor=black,
+    citecolor=red,
+    citecolor=blue, % for printing
+    linkcolor=black, % for printing
+}
+
+\usepackage[
+    backend=biber,
+    style=numeric,
+    bibstyle=numeric-verb,
+    sorting=none
+]{biblatex}
+\usepackage{cleveref}
+
+\usepackage[straightquotes]{newtxtt}
+
+\addbibresource{reference.bib}

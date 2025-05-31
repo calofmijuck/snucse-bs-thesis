@@ -1,0 +1,29 @@
+\documentclass[11pt]{article}
+
+% Constants
+\newcommand{\engpapertitle}{My Awesome Graduation Thesis}
+\newcommand{\korpapertitle}{나의 멋진 졸업 논문}
+\newcommand{\engauthor}{Author Name}
+\newcommand{\korauthor}{홍길동}
+
+\input{contents/preamble.tex}
+
+\begin{document}
+
+\input{contents/frontpage.tex}
+\input{contents/abstract-eng.tex}
+
+\tableofcontents
+\thispagestyle{empty}
+
+\pagebreak
+
+\setcounter{page}{1}
+
+% Add more sections if necessary
+\input{sections/sec01.tex}
+
+\input{contents/bibliography.tex}
+\input{contents/abstract-kor.tex}
+
+\end{document}
