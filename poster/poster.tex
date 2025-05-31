@@ -1,0 +1,66 @@
+\documentclass{snucseposter}
+
+\usepackage[straightquotes]{newtxtt}
+\renewcommand{\tt}[1]{\texttt{#1}}
+
+\usepackage[nodisplayskipstretch]{setspace}
+\linespread{1.1}
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+\mdfdefinestyle{box}{
+  roundcorner=22pt,
+  skipabove=20pt,
+  skipbelow=20pt,
+  linecolor=black,
+	linewidth=1pt,
+	backgroundcolor=cyan!5,
+	nobreak=true
+}
+
+\newcommand{\sectiontitle}[1]{
+  \vspace{10pt}
+  \begin{mdframed}[style=box]
+    \begin{center}
+      {\large \textbf{#1}}
+    \end{center}
+  \end{mdframed}
+  \vspace{5pt}
+}
+
+\begin{document}
+
+\printheader
+
+\begin{center}
+
+  \textbf{\bf\huge\color{NavyBlue} My Awesome Graduation Thesis}
+
+  \vspace{10px}
+
+  \Large Author Name
+  \qquad \quad {\Large Advisor: Prof. Professor Name}
+  \\[0.3cm]
+  \large Dept. of Computer Science and Engineering, Seoul National University\\[0.3cm]
+
+\end{center}
+
+\begin{multicols}{2} % begin two columns
+
+  \sectiontitle{Introduction}
+
+  \begin{itemize}
+    \item This is the introduction section of my awesome thesis.
+    \item It discusses the background of the problem, research methods, and significance of the study.
+    \item The introduction sets the stage for the rest of the thesis.
+  \end{itemize}
+
+  \sectiontitle{Next Section}
+
+  \vspace*{-7pt}
+
+  This section provides an overview of the next part of the thesis. It includes details about the methodology, experiments, and results. The focus is on how the research was conducted and what was discovered.
+
+\end{multicols}
+
+\end{document}
